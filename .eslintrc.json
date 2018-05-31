@@ -1,0 +1,47 @@
+{
+  "parser": "babel-eslint",
+  "env": {
+      "es6": true
+  },
+  "extends": [
+      "eslint:recommended",
+      "plugin:node/recommended"
+  ],
+  "parserOptions": {
+      "ecmaFeatures": {
+          "experimentalObjectRestSpread": true,
+          "experimentalDecorators": true
+      },
+      "sourceType": "module"
+  },
+  "plugins": [
+      "node"
+  ],
+  "rules": {
+      "indent": [
+          "error",
+          4
+      ],
+      "node/exports-style": ["error", "module.exports"],
+
+      "linebreak-style": [
+          "error",
+          "unix"
+      ],
+      "quotes": [
+          "error",
+          "single",
+          { "allowTemplateLiterals": true }
+      ],
+      "semi": [
+          "error",
+          "always"
+      ],
+      "no-console": ["warn", { "allow": ["error"] }],
+      "node/no-unpublished-require":["warn"]
+  },
+  "globals": {
+      "__": true,
+      "require": true
+  }
+}

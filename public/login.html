@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SecureBot login</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+</head>
+
+<body>
+	<div style="margin-top: 100px" class="container has-text-centered">
+		<div class="main">
+			<h1 class="title is-size-1 is-size-2-mobile has-text-link">Доктор+</h1>
+			<form class="form_aut" action="/login" method="post">
+				<div class="columns">
+					<div class="column is-half is-offset-one-quarter">
+						<div class="field">
+							<div class="control has-icons-left has-icons-right">
+								<input class="input" name="username" type="text" placeholder="Логин">
+								<span class="icon is-small is-left">
+									<i class="fas fa-user"></i>
+								</span>
+							</div>
+						</div>
+						<div class="field">
+							<p class="control has-icons-left">
+								<input class="input" name="password" type="password" placeholder="Пароль">
+								<span class="icon is-small is-left">
+									<i class="fas fa-lock"></i>
+								</span>
+							</p>
+						</div>
+						<div >
+							<input class="button is-link" type="submit" value="Войти">
+						</div>
+	
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</body>
+
+</html>
